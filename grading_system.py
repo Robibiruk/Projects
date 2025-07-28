@@ -1,3 +1,4 @@
+#AAU grading system
 score = float(input("Enter your mark: "))
 if score >= 90:
     grade = 'A+'
