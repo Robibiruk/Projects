@@ -1,4 +1,5 @@
     #AAU grading system
+
 while True: 
 
     score = float(input("Enter your mark: "))
@@ -24,6 +25,9 @@ while True:
         grade = 'D'
     else:
         grade = 'F'
+
+    #print the results
+
     print(f"Your grade is: {grade}")
     again = input("Try another? (yes/no): ").lower()
     if again == "yes":
