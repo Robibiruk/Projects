@@ -1,3 +1,4 @@
+#This tells wheather a year is a leap year or not
 while True:
     year = int(input("Enter a year to check if it's a leap year or not: "))
     if year % 4 == 0:
