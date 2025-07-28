@@ -1,4 +1,5 @@
 while True:
+    #input files
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter Second number: "))
     operation = int(input("Choose operation: 1. addition 2. subtraction 3. multiplication 4. division 5. Remainder: "))
@@ -7,7 +8,7 @@ while True:
     opp3 = num1 * num2
 
 
-
+    #if and else
     if operation == 1:
         print(f"{num1} + {num2} = {opp1}")
     elif operation == 2:
