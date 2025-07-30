@@ -2,7 +2,7 @@ while True:
     #input files
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter Second number: "))
-    operation = int(input("Choose operation: 1. addition 2. subtraction 3. multiplication 4. division 5. Remainder: "))
+    operation = int(input("Choose operation: (1. addition 2. subtraction 3. multiplication 4. division 5. Remainder) Enter your choice (1-5): "))
     opp1 = num1 + num2
     opp2 = num1 - num2
     opp3 = num1 * num2
@@ -17,22 +17,24 @@ while True:
         print(f"{num1} * {num2} = {opp3}")
     elif operation == 4:
         if num2 == 0:
-            print("Invalid")
+            print("Invalid division by zero is not allowed.")
         else:
             quotient = num1 / num2
             remainder = num1  % num2
             print(f"{num1} / {num2} = {quotient} R{remainder}")
     elif operation == 5:
         if num2 == 0:
-            print("Invalid")
+            print("Invalid division by zero is not allowed.")
         else:
             remainder2 = num1 % num2
             print(f"{num1} % {num2} = {remainder2}")
     else:
-        print("Invalid option, Plese choose from 1 to 5")
+        print("Invalid option, please choose a valid operation (1-5).")
         continue
     again = input("Continue: (yes/no)").lower()
     if again != "yes":
-        print("goodbye")
+        print("Goodbye!")
+        print("Thank you for using the calculator!")
         break
+   
 
