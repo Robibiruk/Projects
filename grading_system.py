@@ -30,6 +30,6 @@ while True:
 
     print(f"Your grade is: {grade}")
     again = input("Try another? (yes/no): ").lower()
-    if again != "yes":
+    if again != "yes" and again != "y":
         print("Goodbye!")
         break
